@@ -45,7 +45,7 @@
                 method: "findById",
                 provCode: provCode
             }, function (data) {
-                $("#tabletest tbody").empty()
+                $("#tabletest tbody").empty();
                 $("#tabletest thead").show();
                 if (data.length != 0) {
                     $.each(data, function (i, d) {

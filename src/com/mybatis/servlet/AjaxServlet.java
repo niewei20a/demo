@@ -72,7 +72,7 @@ public class AjaxServlet extends javax.servlet.http.HttpServlet {
         rep.setContentType("text/html; charset=UTF-8");
         rep.setCharacterEncoding("utf-8");
         SqlSession sqlSession = MyBatisUtil.getSession();
-        System.out.println("id = " + req.getParameter("id") );
+        System.out.println("id = " + req.getParameter("id"));
         int id = Integer.parseInt(req.getParameter("id").trim());
         sqlSession.delete("wzujb.deleteUserById", id);
         sqlSession.commit();
